@@ -10,12 +10,19 @@ const App = require('./src/App').default;
 
 const app = express();
 
+const title = 'My SSR App';
+const description = 'Your page description goes here';
+const keywords = 'keyword1, keyword2, keyword3';
+const author = 'Your Name';
+
 app.get('/', (req, res) => {
     const stream = ReactDOMServer.renderToNodeStream(React.createElement(App));
     res.write('<!DOCTYPE html>');
     res.write('<html>');
-    res.write('<head><title>My SSR App</title></head>');
-    res.write('<meta name="description" content="Echo">')
+    res.write(`<head><title>${title}</title></head>`);
+    res.write(`<meta name="description" content="${description}">`);
+    res.write(`<meta name="keywords" content="${keywords}">`);
+    res.write(`<meta name="author" content="${author}">`);
     res.write('<body>');
     stream.pipe(res, {end: false});
     stream.on('end', () => {
