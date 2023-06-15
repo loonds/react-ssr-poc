@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# React SSR POC
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a Proof-of-Concept (POC) repository showcasing server-side rendering (SSR) with React. It demonstrates how to
+render React components on the server and send the pre-rendered HTML to the client for improved performance and search
+engine optimization (SEO).
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Server-side rendering of React components
+- Bundling of client-side and server-side code with Webpack
+- CSS styles integration with CSS Modules
+- Data fetching on the server side
+- Server-side routing with React Router
+- Error handling during rendering
+- SEO optimization with meta tags
+- Testing with Jest and React Testing Library
+- Deployment options and considerations
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Follow the steps below to run the React SSR POC on your local machine:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+- Node.js (v18 or lower)
+- npm (v9.3.0 or lower)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+1. Clone the repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/loonds/react-ssr-poc.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install the dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   `cd react-ssr-poc`
 
-### `npm run eject`
+   `npm install`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Build the project:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   `npm run build`
+2. Start the server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   `npm run build`
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+To deploy the React SSR app to a production environment, follow the deployment guidelines for your preferred hosting
+platform (e.g., _AWS_, _Heroku_, _Vercel_). Make sure to configure the necessary environment variables and adjust the build
+and start commands accordingly.
 
-### `npm run build` fails to minify
+### Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull
+request.
+
+### License
+
+This project is licensed under the MIT License.
+
+### Acknowledgements
+
+[React](https://react.dev/) - JavaScript library for building user interfaces
+
+[React Router](https://reactrouter.com/en/main) - Declarative routing for React
+
+[Webpack](https://webpack.js.org/) - Module bundler for JavaScript applications
+
+
